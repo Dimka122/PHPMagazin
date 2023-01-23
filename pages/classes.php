@@ -2,7 +2,7 @@
 class Tools
 {
     static function connect(
-        $host = "localhost:3307",
+        $host = "localhost",
         $user = "root",
         $pass = "",
         $dbname = "shop")
@@ -11,7 +11,7 @@ class Tools
         $options = array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
+            PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES UTF8'
         );
         try {
             $pdo = new

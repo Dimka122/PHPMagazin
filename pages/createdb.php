@@ -58,4 +58,3 @@ $pdo->exec($sub);
 $pdo->exec($item);
 $pdo->exec($images);
 $pdo->exec($sale);
-?>
